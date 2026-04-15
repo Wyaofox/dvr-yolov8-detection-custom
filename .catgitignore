@@ -1,0 +1,11 @@
+# Used by catgit; https://github.com/FlyingFathead/catgit
+#README.md
+CUDA_SETUP.md
+LICENSE
+yolo_detections/**
+old/
+old/**
+# utils/
+# utils/**
+examples/
+examples/**
