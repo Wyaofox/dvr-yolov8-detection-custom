@@ -1,4 +1,91 @@
-# DVR-YOLOv8-Detection
+﻿# YOLO瀹炴椂鐩戞帶妫€娴嬬郴缁燂紙浜屾寮€鍙戠増锛?
+> 鍩轰簬 [dvr-yolov8-detection](https://github.com/FlyingFathead/dvr-yolov8-detection) 杩涜浜屾寮€鍙?
+## 椤圭洰绠€浠?
+鏈」鐩槸涓€涓熀浜嶻OLOv8/YOLOv11鐨勫疄鏃剁洃鎺ф娴嬬郴缁燂紝閫氳繃鎽勫儚澶村疄鏃舵崟鎹夌敾闈紝鑷姩妫€娴嬬敾闈腑鐨勪汉鍛橈紝骞跺鎸囧畾鍖哄煙杩涜鍏ヤ镜妫€娴嬪拰椹荤暀鎶ヨ銆備富瑕佺敤浜庤В鍐充紶缁熺洃鎺ч渶瑕佷汉宸ョ洴灞忔晥鐜囦綆鐨勯棶棰樸€?
+## 鏂板鍔熻兘锛堜簩娆″紑鍙戯級
+
+鍦ㄥ師椤圭洰鍩虹涓婏紝鎴戜滑鏂板浜嗕互涓嬫牳蹇冨姛鑳斤細
+
+### 1. 鍖哄煙鍏ヤ镜妫€娴?- 鐢ㄦ埛鍙湪Web鐣岄潰涓婄粯鍒跺杈瑰舰鐩戞帶鍖哄煙
+- 鑷姩璁＄畻浜轰綋杈圭晫妗嗕笌鍖哄煙鐨勯噸鍙犲害锛圛oU锛?- 閲嶅彔搴﹁秴杩囬槇鍊硷紙榛樿30%锛夊垽瀹氫负鍏ヤ镜
+
+### 2. 椹荤暀鎶ヨ鏈哄埗
+- 闃茶鎶ヨ璁★細鍙湁浜哄憳鍦ㄥ尯鍩熷唴鍋滅暀瓒呰繃3绉掓墠瑙﹀彂鎶ヨ
+- 璺繃浜哄憳涓嶈Е鍙戞姤璀︼紝鍑忓皯璇姤鐜?- 鏀寔澶氫汉鍚屾椂鍦ㄥ尯鍩熷唴锛屽悇鑷嫭绔嬭鏃?
+### 3. NiceGUI绠＄悊鐣岄潰
+- 鏇夸唬鍘烣lask鐣岄潰锛屾洿鐜颁唬鍖栫殑Web绠＄悊鐣岄潰锛堢鍙?001锛?- **妫€娴嬭褰曢〉**锛氬疄鏃舵樉绀烘娴嬩汉鍛樹俊鎭€乼rack_id銆佺疆淇″害
+- **鍖哄煙绠＄悊椤?*锛氱偣鍑荤粯鍒跺杈瑰舰鍖哄煙锛屾敮鎸佺儹鏇存柊
+- **褰曞埗鏌ョ湅椤?*锛氬睍绀鸿嚜鍔ㄤ繚瀛樼殑鎶ヨ褰曞儚鏂囦欢
+- **绯荤粺淇℃伅椤?*锛氭樉绀篎PS銆丟PU鐘舵€併€佸尯鍩熺粺璁?
+### 4. 鑷姩瑙嗛褰曞埗
+- 妫€娴嬪埌鍏ヤ镜鎶ヨ鏃惰嚜鍔ㄥ綍鍒?0绉掕棰戠墖娈?- 瑙嗛淇濆瓨涓篗P4鏍煎紡锛屾枃浠跺悕甯︽椂闂存埑
+
+### 5. 閽夐拤鎺ㄩ€侊紙棰勭暀锛?- 鏀寔閽夐拤鏈哄櫒浜篧ebhook鎺ㄩ€佸憡璀︼紙鎺ュ彛宸查鐣欙級
+- 鍙帹閫佸尯鍩熷叆渚垫姤璀︺€佹瘡鏃ョ粺璁℃棩鎶?
+## 鎶€鏈爤
+
+| 鎶€鏈?| 浣滅敤 | GitHub |
+|------|------|---------|
+| YOLOv11 (ultralytics) | 鐩爣妫€娴嬫ā鍨?| https://github.com/ultralytics/ultralytics |
+| supervision | 妫€娴嬭緟鍔╋紙鏍囨敞銆佽窡韪€佸尯鍩燂級 | https://github.com/roboflow/supervision |
+| OpenCV | 瑙嗛閲囬泦涓庡浘鍍忓鐞?| https://github.com/opencv/opencv |
+| NiceGUI | Web绠＄悊鐣岄潰 | https://github.com/zauberzeug/nicegui |
+
+## 椤圭洰缁撴瀯
+
+```
+dvr-yolov8-detection/
+鈹溾攢鈹€ yolov8_live_rtmp_stream_detection.py  # 涓荤▼搴?鈹溾攢鈹€ zone_manager.py                        # 鍖哄煙妫€娴嬫ā鍧?鈹溾攢鈹€ video_recorder.py                      # 瑙嗛褰曞埗妯″潡
+鈹溾攢鈹€ nicegui_dashboard.py                   # NiceGUI鐣岄潰
+鈹溾攢鈹€ dingtalk_notify.py                     # 閽夐拤鎺ㄩ€佹ā鍧?鈹溾攢鈹€ daily_report.py                        # 姣忔棩缁熻妯″潡
+鈹溾攢鈹€ config.ini                             # 閰嶇疆鏂囦欢
+鈹溾攢鈹€ start.bat                              # Windows涓€閿惎鍔?鈹斺攢鈹€ docs/                                  # 绛旇京鏂囨。
+```
+
+## 蹇€熷惎鍔?
+### Windows
+
+```powershell
+# 鍙屽嚮杩愯 start.bat 鎴栧懡浠よ鎵ц
+start.bat
+```
+
+鍚姩鍚庝細鑷姩鎵撳紑娴忚鍣ㄨ闂?`http://127.0.0.1:5001`
+
+### 閰嶇疆璇存槑
+
+缂栬緫 `config.ini` 鏂囦欢锛?
+```ini
+[zones]
+enabled = true
+clip_duration = 10
+polygons = gate=45,67;41,85;69,86;64,67 | door=46,11;64,11;63,65;47,65
+```
+
+鍖哄煙鍧愭爣浣跨敤鐧惧垎姣旓紝鑷姩閫傞厤鍒嗚鲸鐜囥€?
+## 绯荤粺婕旂ず
+
+![妫€娴嬬晫闈(docs/images/detection_demo.png)
+
+## 寮€鍙戝洟闃?
+| 瑙掕壊 | 璐熻矗鍐呭 |
+|------|---------|
+| 缁勯暱 | 椤圭洰缁熺銆佹灦鏋勮璁°€佹ā鍧楁暣鍚?|
+| 鐩爣妫€娴?| YOLO妯″瀷寮€鍙戜笌璋冧紭 |
+| 鍖哄煙妫€娴?| 鍏ヤ镜妫€娴嬩笌椹荤暀鎶ヨ绠楁硶 |
+| Web鐣岄潰 | NiceGUI绠＄悊鐣岄潰寮€鍙?|
+| 璧勬枡鏁寸悊 | 鏂囩尞鏌ラ槄銆佹妧鏈祫鏂欐暣鐞?|
+| PPT鍒朵綔 | 绛旇京PPT璁捐涓庡埗浣?|
+| 璁茬鎾板啓 | 绛旇京璁茬銆佹紨绀烘枃绋挎挵鍐?|
+
+## 鑷磋阿
+
+鏈」鐩熀浜?[FlyingFathead/dvr-yolov8-detection](https://github.com/FlyingFathead/dvr-yolov8-detection) 寮€婧愰」鐩繘琛屼簩娆″紑鍙戯紝鎰熻阿鍘熶綔鑰呮彁渚涚殑浼樼妗嗘灦銆?
+---
+
+## 鍘熼」鐩鏄?
+浠ヤ笅涓哄師椤圭洰 README 鍐呭锛?
+---# DVR-YOLOv8-Detection
 
 ## Description
 
@@ -12,7 +99,7 @@ The video preview can be run both in a GUI window and headless on a local web se
 
 - **Real-time human/animal/object detection and alert system**
 - **(New!)** Now runs on the newest [YOLOv11](https://github.com/ultralytics/ultralytics?tab=readme-ov-file) model by default
-- 🐳 A Dockerfile for Dockerized installs is also included.
+- 馃惓 A Dockerfile for Dockerized installs is also included.
 - Runs on **Python + YOLOv8-11 + OpenCV2**
 - Both GUI and headless web server versions (`Flask`), 2-in-1
   - Web server has i.e. easy-to-use image carousel for captured still viewing etc
@@ -49,7 +136,7 @@ Real-time detection also supports additional CUDA features such as CUDA video de
 
 ---
 
-🐳 For Docker setup, see the **[DOCKER_SETUP.md](./DOCKER_SETUP.md)** for a guide.
+馃惓 For Docker setup, see the **[DOCKER_SETUP.md](./DOCKER_SETUP.md)** for a guide.
 
 ---
 
@@ -446,7 +533,7 @@ Use `utils/batch_humdet_yolo8_opencv2.py` to run YOLOv8 batch detection on direc
   - `enable_webserver` and `headless` both set to `true` by default
   - Server listens at `0.0.0.0:5000` (see `config.ini` for more)  
   - This enables quick deployment especially in headless / Docker setups
-- **v0.154** (Oct-10-2024) 🐳 **Dockerized Setup Now Available!** 🐳
+- **v0.154** (Oct-10-2024) 馃惓 **Dockerized Setup Now Available!** 馃惓
   - Headless mode added for non-GUI/Docker/detection-only modes
     - enable in `config.ini` with `headless = true`
     - or, run the program with `--headless` flag
